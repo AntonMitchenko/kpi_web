@@ -1,0 +1,12 @@
+body::before {
+  content: "";
+  position: fixed;
+  background: #040404 url("../img/bg2.jpg") top right no-repeat;
+  opacity: .25;
+  background-size: cover;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 100vh;
+  z-index: -1;
+}
