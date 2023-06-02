@@ -17,7 +17,7 @@ function validate(){
         (password.value == 'Пароль')&&(login.value == 'Логин')
     ){
         alert("Login Succesfull");
-        window.location.replace("main_page.html");
+        window.location.replace("index.html");
         return false;
     }
     else{
