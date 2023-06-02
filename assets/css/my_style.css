@@ -11,11 +11,12 @@ body::before {
   height: 100vh;
   z-index: -1;
 }
-/*Class  selector*/
+/*Combinators*/
 .navbar-nav>li>a {
   font-size: 20px;
   padding-top: 20px;
 }
+/*Class  selector*/
 .navbar-toggle {
   position: relative;
   padding: 16px 13px;
@@ -28,3 +29,6 @@ body::before {
 }
 /*Pseudo-class selector*/
 /*Id selector*/
+img[alt="logo"] {
+  width: 140px;
+}
