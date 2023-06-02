@@ -1,0 +1,30 @@
+
+/* Стили для контейнера */
+.container_img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px; /* Высота контейнера */
+}
+
+/* Стили для картинки */
+.image {
+  display: block;
+  margin: 0 auto;
+  width: 200px; /* Ширина картинки */
+}
+.symbols_size {
+  font-size: 30px;
+}
+.navbar-runes {
+  margin-bottom: 0;
+}
+.container-runes {
+  padding-top: 20px;
+}
+.runes>#background_section {
+  height: auto;
+}
+#background_section_runes_tb {
+  padding-top: 50px;
+}
