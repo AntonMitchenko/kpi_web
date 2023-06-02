@@ -19,8 +19,8 @@ body::before {
   position: relative;
   padding: 16px 13px;
 }
-@media (max-width: 400px) {
+@media (max-width: 393px) {
   .cba-logo {
-    width: 316px;
+    width: 310px;
   }
 }
