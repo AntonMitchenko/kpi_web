@@ -14,12 +14,13 @@
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
     <!-- Template Main CSS File -->
     <link href="assets/css/my_style.css" rel="stylesheet">
+    <!-- Character CSS File -->
+    <link href="assets/css/character.css" rel="stylesheet">
 </head>
 <body>
-<section id="background_section" data-speed="2" data-type="background">
 <header>
     <div class="navbar-wrapper">
-        <nav class="navbar navbar-inverse navbar-static-top">
+        <nav class="navbar navbar-inverse navbar-static-top navbar-character">
           <div class="container">
             <div class="navbar-header">
                 <a href="main_page.html"><img src="assets/img/logo_tr.png" alt="logo"></a>
@@ -44,112 +45,115 @@
     </div>
 </header>
 
-<main>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-7">
-                <h2 class="featurette-heading">Чертоги за датою народження <span class="text-muted">It'll blow your mind.</span></h2>
+<main class="character">
+    <section id="background_section" data-speed="2" data-type="background">
+        <div class="container container-character">
+            <div class="row">
+                <div class="col-md-7">
+                    <h2 class="featurette-heading">Чертоги за датою народження <span class="text-muted">It'll blow your mind.</span></h2>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <table class="table">
+                        <thead>
+                          <tr>
+                            <th scope="col">Чертог</th>
+                            <th scope="col">Дати народження</th>
+                            <th scope="col">Боги-покровители</th>
+                            <th scope="col">Дерева-талісмани</th>
+                            <th scope="col">Характеристики</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>Чертог Діви</td>
+                            <td>28 серпня - 20 вересня</td>
+                            <td>Богиня Джива</td>
+                            <td>Яблуня</td>
+                            <td>Вперті, незалежні, лідерські</td>
+                          </tr>
+                          <tr>
+                            <td>Чертог Вепра</td>
+                            <td>20 вересня - 12 жовтня</td>
+                            <td>Бог Рамхат</td>
+                            <td>Груша</td>
+                            <td>Свавільні, вперті, боротьба за успіх</td>
+                          </tr>
+                          <tr>
+                            <td>Чертог Щуки</td>
+                            <td>12 жовтня - 3 листопада</td>
+                            <td>Богиня народжувати і зливу</td>
+                            <td>Немає вказаного</td>
+                            <td>Адаптивні, комфортні в будь-яких умовах</td>
+                          </tr>
+                          <tr>
+                            <td>Чертог Лебедя</td>
+                            <td>3 листопада - 24 листопада</td>
+                            <td>Богиня долі Макошь</td>
+                            <td>Сосна</td>
+                            <td>Гординя, успішні, пророцтва</td>
+                          </tr>
+                          <tr>
+                            <td>Чертог Змія</td>
+                            <td>24 листопада - 17 грудня</td>
+                            <td>Богиня Семаргл, липа</td>
+                            <td>Немає вказаного</td>
+                            <td>Егоїсти, самопожертва, успішні</td>
+                          </tr>
+                          <tr>
+                            <td>Чертог Ворона</td>
+                            <td>17 грудня - 8 січня</td>
+                            <td>Бог-покровитель Коляда</td>
+                            <td>Модрина</td>
+                            <td>Цілителі, веселі, розсудливі</td>
+                          </tr>
+                          <tr>
+                            <td>Чертог Медведя</td>
+                            <td>8 січня - 1 лютого</td>
+                            <td>Бог Сварог, бук і малина</td>
+                            <td>Немає
+                          </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <hr class="featurette-divider">
             </div>
         </div>
+    </section>
+    <section id="background_section_character_des" data-speed="2" data-type="background">
         <div class="container">
             <div class="row">
-                <table class="table">
-                    <thead>
-                      <tr>
-                        <th scope="col">Чертог</th>
-                        <th scope="col">Дати народження</th>
-                        <th scope="col">Боги-покровители</th>
-                        <th scope="col">Дерева-талісмани</th>
-                        <th scope="col">Характеристики</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td>Чертог Діви</td>
-                        <td>28 серпня - 20 вересня</td>
-                        <td>Богиня Джива</td>
-                        <td>Яблуня</td>
-                        <td>Вперті, незалежні, лідерські</td>
-                      </tr>
-                      <tr>
-                        <td>Чертог Вепра</td>
-                        <td>20 вересня - 12 жовтня</td>
-                        <td>Бог Рамхат</td>
-                        <td>Груша</td>
-                        <td>Свавільні, вперті, боротьба за успіх</td>
-                      </tr>
-                      <tr>
-                        <td>Чертог Щуки</td>
-                        <td>12 жовтня - 3 листопада</td>
-                        <td>Богиня народжувати і зливу</td>
-                        <td>Немає вказаного</td>
-                        <td>Адаптивні, комфортні в будь-яких умовах</td>
-                      </tr>
-                      <tr>
-                        <td>Чертог Лебедя</td>
-                        <td>3 листопада - 24 листопада</td>
-                        <td>Богиня долі Макошь</td>
-                        <td>Сосна</td>
-                        <td>Гординя, успішні, пророцтва</td>
-                      </tr>
-                      <tr>
-                        <td>Чертог Змія</td>
-                        <td>24 листопада - 17 грудня</td>
-                        <td>Богиня Семаргл, липа</td>
-                        <td>Немає вказаного</td>
-                        <td>Егоїсти, самопожертва, успішні</td>
-                      </tr>
-                      <tr>
-                        <td>Чертог Ворона</td>
-                        <td>17 грудня - 8 січня</td>
-                        <td>Бог-покровитель Коляда</td>
-                        <td>Модрина</td>
-                        <td>Цілителі, веселі, розсудливі</td>
-                      </tr>
-                      <tr>
-                        <td>Чертог Медведя</td>
-                        <td>8 січня - 1 лютого</td>
-                        <td>Бог Сварог, бук і малина</td>
-                        <td>Немає
-                      </tr>
-                    </tbody>
-                </table>
+                <div class="col-md-7">
+                    <h2 class="featurette-heading">Опис чертогів</h2>
+                </div>
+            </div>
+            <hr class="featurette-divider">
+            <div class="row featurette">
+                <div class="col-md-7">
+                  <p class="lead"><b>Чертог діви</b> розташовується в шістнадцятому секторі  Сварожого кола . Всі сектора присвячені представникам тваринного світу, і тільки Чертог діви створений під заступництвом людської істоти. Всього існує дванадцять палаців. Кожен з них, подібно до певним сузір’ям, відносяться до конкретного періоду, в який може бути народжений та чи інша людина. Сварожий коло розділяє небесне полотно на дванадцять ранніх частин. Чертог діви включає в себе період з кінця літа до початку осені. Він захоплює два місяці – серпень і вересень. Також джива пов’язують з родючістю, оскільки її заступництво довелося на період збору врожаю. Джерело: https://divanio.com.ua/?p=3540</p>
+                </div>
+                <div class="col-md-5">
+                  <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="500x500" src="assets/img/diva.jpg" data-holder-rendered="true">
+                </div>
+            </div>
+            <hr class="featurette-divider">
+            <div class="row featurette">
+                <div class="col-md-5">
+                  <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="500x500" src="assets/img/horse.jpg" data-holder-rendered="true">
+                </div>
+                <div class="col-md-7">
+                  <p class="lead"><b>Чертог коня</b> – дивовижний час, коли активізуються сили різних вимірів. Пік розквіту природних сил і період літнього сонцестояння, коли сонце і солярні духи, що дають енергію життя, панують на просторах Яви в повну силу. Найщасливіший час для людини з тих, що дарують Чертоги Сва. Це час природної сили і пік розквіту всіх стихій. Кінь – символ сили, швидкості, родючості, працьовитості. Він втілює в собі значення молодий і сильної енергії життя. Цей Чертог символізує значення чоловічої енергетики, вже не юнацької видали, а дорослої сили, коли прийшла пора вибрати дружину собі і зробити потомство. Джерело: https://divanio.com.ua/?p=3594</p>
+                </div>
             </div>
             <hr class="featurette-divider">
         </div>
-    </div>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-7">
-                <h2 class="featurette-heading">Опис чертогів</h2>
-            </div>
-        </div>
-        <hr class="featurette-divider">
-        <div class="row featurette">
-            <div class="col-md-7">
-              <p class="lead"><b>Чертог діви</b> розташовується в шістнадцятому секторі  Сварожого кола . Всі сектора присвячені представникам тваринного світу, і тільки Чертог діви створений під заступництвом людської істоти. Всього існує дванадцять палаців. Кожен з них, подібно до певним сузір’ям, відносяться до конкретного періоду, в який може бути народжений та чи інша людина. Сварожий коло розділяє небесне полотно на дванадцять ранніх частин. Чертог діви включає в себе період з кінця літа до початку осені. Він захоплює два місяці – серпень і вересень. Також джива пов’язують з родючістю, оскільки її заступництво довелося на період збору врожаю. Джерело: https://divanio.com.ua/?p=3540</p>
-            </div>
-            <div class="col-md-5">
-              <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="500x500" src="assets/img/diva.jpg" data-holder-rendered="true">
-            </div>
-        </div>
-        <hr class="featurette-divider">
-        <div class="row featurette">
-            <div class="col-md-5">
-              <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="500x500" src="assets/img/horse.jpg" data-holder-rendered="true">
-            </div>
-            <div class="col-md-7">
-              <p class="lead"><b>Чертог коня</b> – дивовижний час, коли активізуються сили різних вимірів. Пік розквіту природних сил і період літнього сонцестояння, коли сонце і солярні духи, що дають енергію життя, панують на просторах Яви в повну силу. Найщасливіший час для людини з тих, що дарують Чертоги Сва. Це час природної сили і пік розквіту всіх стихій. Кінь – символ сили, швидкості, родючості, працьовитості. Він втілює в собі значення молодий і сильної енергії життя. Цей Чертог символізує значення чоловічої енергетики, вже не юнацької видали, а дорослої сили, коли прийшла пора вибрати дружину собі і зробити потомство. Джерело: https://divanio.com.ua/?p=3594</p>
-            </div>
-        </div>
-        <hr class="featurette-divider">
-    </div>
+    </section>
 </main>
 
 <footer>
 
 </footer>
-</section>
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
