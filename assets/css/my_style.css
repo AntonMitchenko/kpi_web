@@ -1,16 +1,10 @@
-/*Pseudo-element selector*/
-body::before {
-  content: "";
-  position: fixed;
-  background: #040404 url("../img/bg2.jpg") top right no-repeat;
-  opacity: .25;
-  background-size: cover;
-  left: 0;
-  right: 0;
-  top: 0;
-  height: 100vh;
-  z-index: -1;
-}
+/*
+Check out "bootstrap.css" for the following requirements:
+- Pseudo-element selector (line 2585)
+- Pseudo-class selector (line 48-49)
+- Id selector (line 48-49)
+- Box Model
+*/
 /*Combinators*/
 .navbar-nav>li>a {
   font-size: 20px;
@@ -27,8 +21,17 @@ body::before {
     width: 316px;
   }
 }
-/*Pseudo-class selector*/
-/*Id selector*/
+
+/*selector with attribute*/
 img[alt="logo"] {
   width: 140px;
 }
+#background_section {
+  background: lightblue url("/assets/img/bg_w.jpg") no-repeat fixed center 2%;
+  background-size: cover;
+  height: 100vh; /* 100% of viewport height */
+  margin: 0 auto;
+  position: relative;
+}
+
+
