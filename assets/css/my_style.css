@@ -10,3 +10,12 @@ body::before {
   height: 100vh;
   z-index: -1;
 }
+.navbar-nav>li>a {
+  font-size: 20px;
+  padding-top: 20px;
+}
+
+.navbar-toggle {
+  position: relative;
+  padding: 16px 13px;
+}
