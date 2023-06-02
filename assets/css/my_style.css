@@ -2,8 +2,7 @@
 Check out "bootstrap.css" for the following requirements:
 - Pseudo-element selector (line 2585)
 - Pseudo-class selector (line 48-49)
-- Id selector (line 48-49)
-- Box Model
+- Box Model (.container, all col- types)
 */
 /*Combinators*/
 .navbar-nav>li>a {
@@ -26,6 +25,7 @@ Check out "bootstrap.css" for the following requirements:
 img[alt="logo"] {
   width: 140px;
 }
+/*Id selector*/
 #background_section {
   background: lightblue url("/assets/img/bg_w.jpg") no-repeat fixed center 2%;
   background-size: cover;
@@ -33,5 +33,10 @@ img[alt="logo"] {
   margin: 0 auto;
   position: relative;
 }
-
+.or-sep {
+  font-size: 20px;
+  position: relative;
+  padding-left: 40%;
+  padding-top: 40%;
+}
 
