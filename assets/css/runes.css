@@ -1,0 +1,18 @@
+
+/* Стили для контейнера */
+.container_img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px; /* Высота контейнера */
+}
+
+/* Стили для картинки */
+.image {
+  display: block;
+  margin: 0 auto;
+  width: 200px; /* Ширина картинки */
+}
+.symbols_size {
+  font-size: 30px;
+}
