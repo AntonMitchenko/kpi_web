@@ -16,3 +16,11 @@
 .symbols_size {
   font-size: 30px;
 }
+
+html {
+  scroll-behavior: smooth;
+}
+.active {
+  background-color: yellow; /* Измените на нужный вам цвет подсветки */
+  transition: background-color 0.3s ease; /* Измените значение 0.5s на желаемую продолжительность перехода */
+}
