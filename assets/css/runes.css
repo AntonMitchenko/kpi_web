@@ -28,3 +28,10 @@
 #background_section_runes_tb {
   padding-top: 50px;
 }
+html {
+  scroll-behavior: smooth;
+}
+.active {
+  background-color: black; /* Измените на нужный вам цвет подсветки */
+  transition: background-color 3s ease; /* Измените значение 0.5s на желаемую продолжительность перехода */
+}
