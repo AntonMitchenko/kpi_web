@@ -1,26 +1,3 @@
-// Получаем все ссылки с якорями
-const links = document.querySelectorAll('a[href^="#"]');
-
-// Обходим каждую ссылку и назначаем обработчик события щелчка
-links.forEach(link => {
-  link.addEventListener('click', function(e) {
-    e.preventDefault(); // Предотвращаем переход по ссылке
-
-    const target = document.querySelector(this.getAttribute('href')); // Получаем целевой элемент по атрибуту href
-    if (target) {
-      target.scrollIntoView({ behavior: 'smooth' }); // Плавно прокручиваем к целевому элементу
-
-      // Добавляем класс .active, чтобы плавно подсветить элемент
-      target.classList.add('active');
-
-      // Удаляем класс .active после завершения анимации
-      setTimeout(() => {
-        target.classList.remove('active');
-      }, 2000); // Измените значение 1000 на желаемую продолжительность анимации в миллисекундах
-    }
-  });
-});
-
 var images = document.querySelectorAll('img[usemap]');
 images.forEach( function(image) {
     var mapid = image.getAttribute('usemap').substr(1);
@@ -46,4 +23,27 @@ images.forEach( function(image) {
         ycoords = ycoords.sort(function(a, b){return a-b});
         wrapper.innerHTML += "<a href='"+area.getAttribute('href')+"' title='"+area.getAttribute('title')+"' class='area' style='left: "+((xcoords[0]/imagewidth)*100).toFixed(2)+"%; top: "+((ycoords[0]/imageheight)*100).toFixed(2)+"%; width: "+(((xcoords[1] - xcoords[0])/imagewidth)*100).toFixed(2)+"%; height: "+(((ycoords[1] - ycoords[0])/imageheight)*100).toFixed(2)+"%;'></a>";
     });
+});
+
+// Получаем все ссылки с якорями
+const links = document.querySelectorAll('a[href^="#"]');
+
+// Обходим каждую ссылку и назначаем обработчик события щелчка
+links.forEach(link => {
+  link.addEventListener('click', function(e) {
+    e.preventDefault(); // Предотвращаем переход по ссылке
+
+    const target = document.querySelector(this.getAttribute('href')); // Получаем целевой элемент по атрибуту href
+    if (target) {
+      target.scrollIntoView({ behavior: 'smooth' }); // Плавно прокручиваем к целевому элементу
+
+      // Добавляем класс .active, чтобы плавно подсветить элемент
+      target.classList.add('active_rune');
+
+      // Удаляем класс .active после завершения анимации
+      setTimeout(() => {
+        target.classList.remove('active_rune');
+      }, 1000); // Измените значение 1000 на желаемую продолжительность анимации в миллисекундах
+    }
+  });
 });

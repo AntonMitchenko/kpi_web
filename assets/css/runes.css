@@ -31,9 +31,11 @@
 html {
   scroll-behavior: smooth;
 }
-.active {
+.active_rune {
   background-color: black; /* Измените на нужный вам цвет подсветки */
   transition: background-color 3s ease; /* Измените значение 0.5s на желаемую продолжительность перехода */
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5);
+  border: 2px solid red;
 }
 .hover-rune {
   --b: 0.1em;   /* the thickness of the line */
