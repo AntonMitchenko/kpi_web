@@ -1,15 +1,30 @@
 document.getElementById('submitComment').addEventListener('click', function() {
-    // Get the input text
-    var commentText = document.getElementById('commentInput').value;
-    
-    // Create a new div for the comment
-    var newComment = document.createElement('div');
-    newComment.textContent = commentText;
-    newComment.style.marginBottom = "10px";
+  var commentInput = document.getElementById('commentInput');
+  var commentDisplay = document.getElementById('commentDisplay');
 
-    // Add the new comment to the display
-    document.getElementById('commentDisplay').appendChild(newComment);
+  var commentText = commentInput.value;
 
-    // Clear the input
-    document.getElementById('commentInput').value = '';
+  if (commentText.trim() !== '') {
+    var commentElement = document.createElement('div');
+    commentElement.textContent = commentText;
+    commentDisplay.appendChild(commentElement);
+
+    commentInput.value = '';
+  }
 });
+
+// Old koment box
+//document.getElementById('submitComment').addEventListener('click', function() {
+//  var commentInput = document.getElementById('commentInput');
+//  var commentDisplay = document.getElementById('commentDisplay');
+//
+//  var commentText = commentInput.value;
+//
+//  if (commentText.trim() !== '') {
+//    var commentElement = document.createElement('div');
+//    commentElement.textContent = commentText;
+//    commentDisplay.appendChild(commentElement);
+//
+//    commentInput.value = '';
+//  }
+//});
