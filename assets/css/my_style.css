@@ -71,3 +71,35 @@ img[alt="logo"] {
     line-height: 0;
     border-radius: 32px;
 }
+
+#text-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.zoom-image {
+  transition: transform .2s; /* Animation */
+}
+
+.zoom-image:hover {
+  transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+
+}
+
+.row.featurette {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.col-md-5 {
+  position: relative;
+}
+
+.featurette-image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
