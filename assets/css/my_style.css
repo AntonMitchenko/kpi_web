@@ -103,3 +103,62 @@ img[alt="logo"] {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
+
+/* Стилізація круглої кнопки */
+.btn-circle_info {
+  display: inline-block;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 40px;
+  font-size: 18px;
+  transition: background-color 0.3s ease;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/* Стилізація кольорів кнопок */
+.btn-primary_info_instagram {
+  background-color: #b34ce7;
+  color: #fff;
+}
+
+.btn-primary_info_linkedin {
+  background-color: #007bb5;
+  color: #fff;
+}
+
+.btn-danger_info_instagram {
+  background-color: #b34ce7;
+  color: #fff;
+}
+.btn-danger_info_linkedin {
+  background-color: #007bb5;
+  color: #fff;
+}
+
+/* Збільшення розміру іконки */
+.btn-circle_info i {
+  font-size: 24px;
+  color: #fff;
+}
+.fa {
+  font-size: 30px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-instagram {
+  background: #b34ce7;
+  color: white;
+}
